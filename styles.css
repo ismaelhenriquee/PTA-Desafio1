@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    display: flex;
+    margin-top: 2%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.menu {
+    display: flex;
+    padding-left: 5%;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.menu a {
+    padding: 5% 6%;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-size: 1.3em;
+}
+
+.menu img {
+    width: 2.5vh;
+}
+
+.logo img {
+    height: 5vh;
+}
+
+.content {
+    margin: 2% 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text_content {
+    display: flex;
+    flex-direction: column;
+    max-width: 40%;
+    flex-wrap: wrap;
+    justify-items: end;
+    align-content: end;
+    padding: 20px;
+    text-align: start;
+}
+
+.text_content h2 {
+    width: 100%;
+}
+
+.text_content p {
+    margin-bottom: 30px;
+}
+
+.img_content {
+    max-width: 50%
+}
+
+.bnt_content {
+    margin-left: 0;
+    padding: 4% 9%;
+    background-color: rgba(220, 56, 69, 1);
+    border-radius: 30px;
+    text-decoration: none;
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 13%;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.share {
+    margin-bottom: 1%;
+    text-align: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    min-width: 29%;
+    padding: 5% 4%;
+    border-radius: 20px;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    cursor: pointer;
+    margin: 0;
+    margin-bottom: 5%;
+}
+
+.card P,
+.card h2 {
+    margin-left: 0;
+}
+
+.heart img,
+.gift img {
+    width: 100%;
+}
+
+.heart {
+    margin-right: 0;
+    flex: content;
+    width: 13%;
+    float: right;
+    justify-self: end;
+}
+
+.gift {
+    width: 70%;
+}
+
+footer {
+    height: 8vh;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: transform 2ms;
+}
+
+.heart:hover {
+    transform: scale(1.2);
+    transition: transform 2ms;
+}
+
+@media only screen and (max-width: 480px) {
+    .container {
+        padding: 0;
+        margin: 2% 8%;
+        justify-content: space-between;
+    }
+
+    .content {
+        margin: 2% 8%;
+        justify-content: center;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .text_content h2 {
+        font-size: 1.4em;
+    }
+
+    .vissible {
+        display: none;
+    }
+
+    .card {
+        width: 45%;
+        margin: 0;
+        margin-bottom: 5%;
+    }
+
+    .card p,
+    h2 {
+        font-size: 0.7em;
+    }
+
+    .text_content {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .img_content {
+        display: flex;
+        justify-content: center;
+        max-width: 100%;
+    }
+
+    .img_content img {
+        max-width: 90%;
+    }
+
+    .logo h1 {
+        font-size: 1.5em;
+    }
+
+    .bnt_content {
+        margin: 0 10%;
+    }
+
+    .share h2 {
+        font-size: 1.3em;
+        margin-bottom: 6%;
+    }
+}
